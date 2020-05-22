@@ -1,16 +1,16 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 01/03/2019 00:45
+  	Creation date: 22/05/2020 13:35
   	*/
 
 @font-face {
   font-family: "Flaticon";
-  src: url("Flaticon.eot");
-  src: url("Flaticond41d.eot?#iefix") format("embedded-opentype"),
-       url("Flaticon.woff2") format("woff2"),
-       url("Flaticon.woff") format("woff"),
-       url("Flaticon.ttf") format("truetype"),
-       url("Flaticon.svg#Flaticon") format("svg");
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,22 +18,25 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("Flaticon.svg#Flaticon") format("svg");
+    src: url("./Flaticon.svg#Flaticon") format("svg");
   }
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
+        font-size: 20px;
 font-style: normal;
-/* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin-left: 20px;
 }
 
-.flaticon-window:before { content: "\f100"; }
-.flaticon-measuring:before { content: "\f101"; }
-.flaticon-step-ladder:before { content: "\f102"; }
-.flaticon-interior-design:before { content: "\f103"; }
-.flaticon-sit-down:before { content: "\f104"; }
-.flaticon-turned-off:before { content: "\f105"; }
+.flaticon-brick:before { content: "\f100"; }
+.flaticon-random:before { content: "\f101"; }
+.flaticon-law:before { content: "\f102"; }
+.flaticon-house:before { content: "\f103"; }
+.flaticon-contract:before { content: "\f104"; }
+.flaticon-renovation:before { content: "\f105"; }
+.flaticon-room-divider:before { content: "\f106"; }
+.flaticon-approve:before { content: "\f107"; }
+.flaticon-contract-1:before { content: "\f108"; }
+.flaticon-partnership-handshake:before { content: "\f109"; }

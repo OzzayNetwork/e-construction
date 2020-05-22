@@ -267,5 +267,160 @@ jQuery(document).ready(function($) {
 
 	};
 	siteDatePicker();
+	
+//	construction form
+	$(".plot-details-container .btn-next").on("click", function(){
+		$('.form-header .plot-details').addClass('filled').removeClass('active').addClass('plot-click');
+		$('.form-header .project-details').removeClass('filled').addClass('active');
+		$(this).parent().parent().parent().addClass('d-none');
+		$('.project-details-container').removeClass('d-none');
+		
+	});
+	
+	$(".project-details-container .btn-next").on("click", function(){
+		$('.form-header .project-details').addClass('filled').removeClass('active').addClass('project-click');
+		$('.form-header .application-summary').removeClass('filled').addClass('active');
+		$(this).parent().parent().parent().addClass('d-none');
+		$('.summary-container').removeClass('d-none');
+		
+	});
+	
+	$(".summary-container .btn-next").on("click", function(){
+		$('.form-header .application-summary').addClass('filled').removeClass('active').addClass('summary-click');
+		$('.form-header .checkout').addClass('filled').addClass('active');
+		$(this).parent().parent().parent().addClass('d-none');
+		$('.payment-container').removeClass('d-none');
+		
+
+		
+	});
+	
+	$('body').on("click", ".application-summary.filled", function(){
+		showsummary();
+	});
+	
+	$('body').on("click", ".checkout.filled", function(){
+		showpay();
+	});
+	
+	
+	$(".project-details-container .btn-prev").on("click", function(){
+		showplot();
+		
+	});
+	
+	$('body').on("click",".plot-click.filled", function(){
+		showplot();
+		
+	});
+	
+	$(' body').on("click"," .project-click", function(){
+		showproject();
+
+	});
+	
+	function showsummary(){
+		$('.form-header .application-summary').addClass('filled').addClass('active').addClass('checkout-click').siblings().removeClass('active');
+		$('.plot-details-container').removeClass('d-none').siblings('fieldset').addClass('d-none');
+	}
+	
+	function showpay(){
+		$('.form-header .checkout').addClass('filled').addClass('active').addClass('checkout-click').siblings().removeClass('active');
+		$('.payment-container').removeClass('d-none').siblings('fieldset').addClass('d-none');
+	}
+	function showplot(){
+		$('.form-header .plot-details').addClass('filled').addClass('active').siblings().removeClass('active');
+		$('.project-details-container').addClass('d-none');
+		$('.plot-details-container').removeClass('d-none').siblings('fieldset ').addClass('d-none');
+	}
+	
+	function showproject(){
+		$('.form-header .project-details').addClass('filled').addClass('active').siblings().removeClass('active');
+		$('.project-details-container').removeClass('d-none').siblings('fieldset').addClass('d-none');
+	}
+	
+	function showsummary(){
+		$('.form-header .application-summary').addClass('filled').addClass('active').siblings().removeClass('active');
+		$('.summary-container').removeClass('d-none').siblings('fieldset').addClass('d-none');
+	}
+	
+	
+	
+	
+	$('.summary-container .btn-prev').on('click', function(){
+		showproject();
+		$('.application-summary').addClass('filled');
+	});
+	
+	$('.mobile').on('click', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.mpesa-payment').removeClass('d-none').siblings().addClass('d-none');
+	});
+	$('.credit-card').on('click', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.card-payment').removeClass('d-none').siblings().addClass('d-none');
+	});
+	
+//	on file upload
+	
+	$('#ownership-docs').on('change', function(){
+		
+		if($(this).length==0){
+			$(this).siblings().children('.selected-file').addClass('d-none');
+		}
+		else{
+			$(this).siblings().children('.selected-file').removeClass('d-none');
+		}
+	});
+	
+	$('#site-plan').on('change', function(){
+		
+		if($(this).length==0){
+			$(this).siblings().children('.selected-file').addClass('d-none');
+		}
+		else{
+			$(this).siblings().children('.selected-file').removeClass('d-none');
+		}
+	});
+	
+	$('#survay-plan').on('change', function(){
+		
+		if($(this).length==0){
+			$(this).siblings().children('.selected-file').addClass('d-none');
+		}
+		else{
+			$(this).siblings().children('.selected-file').removeClass('d-none');
+		}
+	});
+	
+	$('#button-addon2').on('click', function(){
+		$('.phoner').text($('#phone-wallet').val());
+		setTimeout(function(){
+			$('#mpesa-modal .confirmed-payment').removeClass('d-none').siblings().addClass('d-none');
+			$('.waiting-payment p').text("Transaction was successful. As soon as your permit is ready, you will be contacted.");
+		},8000);
+		
+		
+	});
+	
+	
+	$('#credit-btn').on('click', function(){
+		
+		setTimeout(function(){
+			$('#credit-modal .confirmed-payment').removeClass('d-none').siblings().addClass('d-none');
+			$('.waiting-payment p').text("Transaction was successful. As soon as your permit is ready, you will be contacted.");
+		},8000);
+		
+		
+	});
+	
+	$('#mpesa-modal button').on('click',function(){
+		location.reload(true);
+	});
+	$('#credit-modal button').on('click',function(){
+		location.reload(true);
+	});
+	
+	
 
 });
