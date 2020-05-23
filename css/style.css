@@ -7793,7 +7793,7 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 900; }
     @media (min-width: 768px) {
       .site-blocks-cover h1 {
-        font-size: 5rem; } }
+        font-size: 3rem; } }
   .site-blocks-cover p {
     color: #fff;
     font-size: 1.5rem;
