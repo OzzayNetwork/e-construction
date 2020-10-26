@@ -4963,8 +4963,8 @@
 	margin-top: 1.2rem;
 }
 .form-head{
-	min-height: 300px !important;
-    height: calc(50vh) !important;
+	min-height: 200px !important;
+    height: calc(40vh) !important;
 }
 .input-file{
 	position: relative;

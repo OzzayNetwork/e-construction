@@ -6229,7 +6229,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important; }
+  margin-top: 2rem !important; }
 
 .mr-5,
 .mx-5 {
@@ -7721,7 +7721,7 @@ h1, h2, h3, h4, h5, h6 {
         font-family: "icomoon";
         content: "\f078";
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%) rotate(-180deg);
         -ms-transform: translate(-50%, -50%) rotate(-180deg);
@@ -7778,8 +7778,8 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 600px;
     height: calc(100vh); }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
-    min-height: 600px;
-    height: calc(80vh); }
+    min-height: 415px;
+    height: calc(40vh); }
   .site-blocks-cover .sub-text {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -7808,7 +7808,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem; }
   @media (min-width: 768px) {
     .site-heading {
-      font-size: 3rem; } }
+      font-size: 2rem; } }
   .site-heading strong {
     font-weight: 900; }
 
