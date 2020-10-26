@@ -420,6 +420,18 @@ jQuery(document).ready(function($) {
 	$('#credit-modal button').on('click',function(){
 		location.reload(true);
 	});
+
+	$('input.personnel-attachment').on('change', function(){
+	
+		if($(this).value != ""){
+			$(this).siblings('label').removeClass('border-danger').children('p').html('<i class="mdi mdi-check-all"></i> File selected').removeClass('text-danger').addClass('text-success');
+			alert('chnaged');
+		}
+		else{
+	
+		}
+	
+	});
 	
 	
 

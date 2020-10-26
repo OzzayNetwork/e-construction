@@ -8434,3 +8434,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .block-25 ul li a:hover .text .heading {
   color: #fff; }
+  .personnel-attachment {
+    padding: 0.8rem;
+    font-size: 40px;
+    border: 2px solid #2196F3;
+    color: #2196F3;
+    border-radius: 3px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-grow: 0;
+    text-align: center;
+    margin-top: 0.8rem;
+    background-color: #E3F2FD;
+    cursor: pointer;
+}
+.personnel-attachment h6 {
+  font-weight: bold;
+}
+.text-success {
+  color: #32c787!important;
+}
+.personnel-attachment small, .personnel-attachment .small {
+  font-size: 12px;
+}
