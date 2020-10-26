@@ -424,3 +424,15 @@ jQuery(document).ready(function($) {
 	
 
 });
+
+    //================================================
+  //map scripts
+  //================================================
+  $('.map-key-card').on('click', function(){
+	$('.map-card').removeClass('d-none');
+	});
+
+	$('.close-map-key').on('click', function(){
+  $('.map-card').addClass('d-none');
+  });
+  
