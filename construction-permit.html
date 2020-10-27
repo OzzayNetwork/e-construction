@@ -9,6 +9,7 @@
 <title>E-Construction Nairobi county</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900">
 <link rel="stylesheet" href="fonts/icomoon/style.css">
 <link rel="stylesheet" href="css/magnific-popup.css">
@@ -161,13 +162,18 @@
 		    <div class="form-header">
 				<div class="active plot-details">
 				  	<span class="flaticon-project"></span>
-					<h4>Plot Details</h4>
+					<h4>Project Details</h4>
 				  </div>
 				  
 				  <div class="project-details">
 				  	<span class="flaticon-brick"></span>
-					<h4>Project Details</h4>
-			    </div>
+					<h4>Project Personnel</h4>
+				</div>
+				
+				<div class="attachments">
+					<span class="flaticon-files-and-folders"></span>
+				  <h4>Attachments</h4>
+				</div>
 				  
 				  <div class="application-summary">
 				  	<span class="flaticon-summary"></span>
@@ -180,74 +186,46 @@
 				  </div>
 			  </div>
 			  	
-                <fieldset class="plot-details-container">
-					<h3>
-                    <span class="title_text">Plot Details</span>
-                </h3>
+                <fieldset class="plot-details-container">				
                     <div class="fieldset-content">
                         <div class="row">
+							<div class="col-12">
+								<h5 class=""><strong>Plot &AMP; Location</strong></h5>
+								<hr class="mt-0 pt-0">
+							</div>
+
 							<div class="col-12">
 								<div class="row">
 									<div class="form-group col-md-6 col-sm-12 col-lg-4">
 										<label for="plot-num" class="form-label">Plot Number</label>
 										<input type="text" class="form-control" name="username" id="plot-num" placeholder="Enter the plot number" />
 									</div>
+									
+									<div class="form-group col-md-6 col-sm-12 col-lg-4">
+										<label for="sub-county" class="plot-size">Plot size</label>
+										<input type="text" class="form-control" name="username" id="plot-size" placeholder="Enter the plot's size" />
+									</div>
+
+									<div class="form-group col-md-6 col-sm-12 col-lg-4">
+										<label for="sub-county" class="form-label">Sub county</label>
+									   <input type="text" class="form-control" name="username" id="sub-county" placeholder="Enter the sub county" />
+								   </div>
+
+								   <div class="col-md-6 col-sm-12 col-lg-4">
+										<label for="plot-address" class="form-label">Physical address</label>
+									   <input type="text" class="form-control" name="username" id="plot-address" placeholder="Enter plot's physical address" />
+									</div>
+
 								</div>
 							</div>
-							
-							<div class="form-group col-sm-12 col-lg-3 col-md-12">
-								 <label for="sub-county" class="plot-size">Plot size</label>
-								<input type="text" class="form-control" name="username" id="plot-size" placeholder="Enter the plot's size" />
-							</div>
-							
-							<div class="form-group col-sm-12 col-lg-4 col-md-12">
-								 <label for="sub-county" class="form-label">Sub county</label>
-								<input type="text" class="form-control" name="username" id="sub-county" placeholder="Enter the sub county" />
-							</div>
-							<div class="form-group col-lg-5 col-md-12 col-sm-12">
-								 <label for="plot-address" class="form-label">Physical address</label>
-								<input type="text" class="form-control" name="username" id="plot-address" placeholder="Enter plot's physical address" />
-                       		 </div>
-							<div class="col-12">
-								<h5 class=""><strong>Owner's details</strong></h5>
-								<hr class="mt-0 pt-0">
-							</div>
-							<div class="form-group col-lg-5 col-sm-12">
-								 <label for="owners-name" class="form-label">Owner's full names</label>
-								<input type="text" class="form-control" name="username" id="owners-name" placeholder="Enter Owners name" />
-                       		 </div>
-							<div class="form-group col-lg-6 col-sm-12">
-								 <label for="owners-phone" class="form-label">Owner's Phone number</label>
-								<input type="text" class="form-control" name="username" id="owners-phone" placeholder="Enter Owner's phone number" />
-                       		 </div>
-							<div class="form-group col-lg-5 col-sm-12">
-								 <label for="owners-id" class="form-label">Owner's National ID</label>
-								<input type="text" class="form-control" name="username" id="owners-id" placeholder="Enter Owner's Ntional ID number" />
-                       		 </div>
-						</div>
-                    </div>
-                    <div class="fieldset-footer">
-						<div class="step-btns">
-							<span class="btn btn-primary btn-next">Next step</span>
-						</div>
-                        <span>Step 1 of 4</span>
-                    </div>
-                </fieldset>
-			 	 <fieldset class="project-details-container d-none animated fadeIn">
-					 <h3>
-                    <span class="title_text">Project Details</span>
-                </h3>
-                    <div class="fieldset-content">
-                        <div class="row">
-							
+
+							<!-- Map -->
 							<div class="col-12">                                               
 								<div class="row">
 									<div class="col-md-8 col-sm-12">
-										<label class="mb-0"><strong>Select Location from the Map</strong></label>
 										<p><small>Double click to select a location on the map</small></p>
 									</div>
 									<div class="col-md-4 col-sm-12">
-										<label class="mb-0"><strong>Location details</strong></label>
 										<p><small>Generated from the area selected on the map</small></p>
 									</div>
 
@@ -286,75 +264,190 @@
 
 						 </div>
 
+						 <div class="col-12">
+							<h5 class=""><strong>Project's details</strong></h5>
+							<hr class="mt-0 pt-0">
+						</div>
+						<div class="form-group col-lg-4 col-sm-12">
+							 <label for="project-name" class="form-label">Project name</label>
+							<input type="text" class="form-control" name="project-name" id="project-name" placeholder="Enter project name" />
+							</div>
+							<div class="form-group col-md-4 col-sm-12 col-lg-4 col-sm-12">
+								<label for="building-type" class="form-label">Building type<strong class="text-danger">*</strong></label>
+								<select id="building-type" class="form-control" name="building type">
+									<option value="">-- select buildng type --</option>
+									<option value="">Commercial</option>
+									<option value="">Residential</option>
+								</select>
+							</div>
+
+						<div class="form-group col-lg-4 col-sm-12">
+							 <label for="plinth-size" class="form-label">Project Plinth Size</label>
+							<input type="text" class="form-control" name="project-plinth-size" id="project-plinth-size" placeholder="Enter project plinth size" />
+						</div>
+
+						<div class="form-group col-md-4 col-sm-12 col-lg-4 col-sm-12">
+							<label for="projects-value" class="form-label">Project's Value <strong class="text-danger">*</strong></label>
+							<input type="text" class="form-control" name="username" id="projects-value" placeholder="Enter the project's value" />
+							<small class="text-info">Note that the application charge is 1.5% of project's value, ensure you input the correct value to avoid application rejection</small>
+						</div>
+						
+						
+
+						</div>
+                    </div>
+                    <div class="fieldset-footer">
+						<div class="step-btns">
+							<span class="btn btn-primary btn-next">Next step</span>
+						</div>
+                        <span>Step 1 of 5</span>
+                    </div>
+				</fieldset>
+				
+
+			 	 <fieldset class="project-details-container d-none animated fadeIn">
+                    <div class="fieldset-content">
+                        <div class="row">
 							<div class="col-12">
-								<div class="row">
-									<div class="form-group col-md-6 col-sm-12 col-lg-6 col-sm-12">
-										<label for="projects-name" class="form-label">Project's name</label>
-										<input type="text" class="form-control" name="username" id="projects-name" placeholder="Project's Name" />
+								<div class="row">					
+									<div class="col-12">
+										<h5 class=""><strong>Owner's details</strong></h5>
+										<hr class="mt-0 pt-0">
 									</div>
-									
-									<div class="form-group col-md-6 col-sm-12 col-lg-6 col-sm-12">
-										<label for="projects-value" class="form-label">Project's Value <strong class="text-danger">*</strong></label>
-										<input type="text" class="form-control" name="username" id="projects-value" placeholder="Enter the project's value" />
-										<small class="text-info">Note that the application charge is 1.5% of project's value, ensure you input the correct value to avoid application rejection</small>
+									<div class="form-group col-lg-5 col-sm-12">
+										<label for="owners-name" class="form-label">Owner's full names</label>
+										<input type="text" class="form-control" name="username" id="owners-name" placeholder="Enter Owners name" />
 									</div>
-									
-									<div class="form-group col-md-6 col-sm-12 col-lg-6 col-sm-12">
-										<label for="building-type" class="form-label">Building type<strong class="text-danger">*</strong></label>
-										<select id="building-type" class="form-control" name="building type">
-											<option value="">-- select buildng type --</option>
-											<option value="">Commercial</option>
-											<option value="">Residential</option>
-										</select>
+									<div class="form-group col-lg-6 col-sm-12">
+										<label for="owners-phone" class="form-label">Owner's Phone number</label>
+										<input type="text" class="form-control" name="username" id="owners-phone" placeholder="Enter Owner's phone number" />
 									</div>
+									<div class="form-group col-lg-5 col-sm-12">
+										<label for="owners-id" class="form-label">Owner's National ID</label>
+										<input type="text" class="form-control" name="username" id="owners-id" placeholder="Enter Owner's Ntional ID number" />
+										</div>
 									
 								</div>
 							</div>
+
 							<div class="col-12">
-								<h5 class=""><strong>Project Documents</strong></h5>
-								<hr class="mt-0 pt-0">
+								<div class="row">					
+									<div class="col-12">
+										<h5 class=""><strong>Personnel details</strong></h5>
+										<hr class="mt-0 pt-0">
+									</div>
+									<div class="form-group col-lg-4 col-sm-12">
+										<div class="row">
+											<div class="col-10 pr-0">
+												<label for="structural-eng" class="form-label">Structural Engineer</label>
+												<input type="text" class="form-control" name="structural-eng" id="structural-eng" placeholder="Enter certificate number" />		
+											</div>
+
+											<div class="col-2 mt-4 my-0 p-0">
+												<button class="btn btn-primary" type="button" onclick="eng_details()" style="margin-top: 10px; height: 50px; width: 50px;"><i class="mdi mdi-account-search-outline"></i></button>
+											</div>
+										</div>
+										<!-- Details Card -->
+										<div class="professional-details eng-details d-none p-4">
+											<div class="contact-header">
+												<h6>Engineer Details</h6>
+											</div>
+   
+											<small class="text-muted">Full Names</small>
+											<p>Kelvin Njuguna Ndungu</p>                            
+											<small class="text-muted">Profession</small>
+											<p>Company</p>
+											<small class="text-muted">Joined on</small>
+											<p>22 Feb 2020</p>
+		
+		
+											<div class="contact-header mt-2">
+												<h4>Contact details</h4>
+											</div>
+		
+											<small class="text-muted">Mobile phone number</small>
+											<p><a href="tel:0704549859">0704549859</a></p>
+											<small class="text-muted">Email address</small>
+											<p><a href="mailto:<nowiki> agentavery@sample.com">email@email.com</a></p>
+											
+										</div>
+
+									</div>
+									<div class="form-group col-lg-4 col-sm-12">
+										<div class="row">
+											<div class="col-10 pr-0">
+												<label for="architecture" class="form-label">Architecture</label>
+												<input type="text" class="form-control" name="architecture" id="architecture" placeholder="Enter certificate number" />
+											</div>
+
+											<div class="col-2 mt-4 my-0 p-0">
+												<button class="btn btn-primary" type="button" onclick="arch_details()" style="margin-top: 10px; height: 50px; width: 50px;"><i class="mdi mdi-account-search-outline"></i></button>
+											</div>
+										</div>
+										<!-- Details Card -->
+										<div class="professional-details arch-details d-none p-4">
+											<div class="contact-header">
+												<h6>Architect Details</h6>
+											</div>
+	
+											<small class="text-muted">Full Names</small>
+											<p>Kelvin Njuguna Ndungu</p>                            
+											<small class="text-muted">Profession</small>
+											<p>Company</p>
+											<small class="text-muted">Joined on</small>
+											<p>22 Feb 2020</p>
+		
+		
+											<div class="contact-header mt-2">
+												<h4>Contact details</h4>
+											</div>
+		
+											<small class="text-muted">Mobile phone number</small>
+											<p><a href="tel:0704549859">0704549859</a></p>
+											<small class="text-muted">Email address</small>
+											<p><a href="mailto:<nowiki> agentavery@sample.com">email@email.com</a></p>
+											
+										</div>
+									</div>
+									<div class="form-group col-lg-4 col-sm-12">
+										<div class="row">
+											<div class="col-10 pr-0">
+												<label for="contructor" class="form-label">Contructor</label>
+												<input type="text" class="form-control" name="contructor" id="contructor" placeholder="Enter certificate number" />
+											</div>
+											<div class="col-2 mt-4 my-0 p-0">
+												<button class="btn btn-info" type="button" onclick="cont_details()" style="margin-top: 10px; height: 50px; width: 50px;"><i class="mdi mdi-account-search-outline"></i></button>
+											</div>
+										</div>
+										<!-- Details Card -->
+										<div class="professional-details contructor-details d-none p-4">
+											<div class="contact-header">
+												<h6>Contructor Details</h6>
+											</div>
+	
+											<small class="text-muted">Full Names</small>
+											<p>Kelvin Njuguna Ndungu</p>                            
+											<small class="text-muted">Profession</small>
+											<p>Individual</p>
+											<small class="text-muted">Joined on</small>
+											<p>22 Feb 2020</p>
+		
+		
+											<div class="contact-header mt-2">
+												<h4>Contact details</h4>
+											</div>
+		
+											<small class="text-muted">Mobile phone number</small>
+											<p><a href="tel:0704549859">0704549859</a></p>
+											<small class="text-muted">Email address</small>
+											<p><a href="mailto:<nowiki> agentavery@sample.com">email@email.com</a></p>
+											
+										</div>
+									</div>
+
+								</div>
 							</div>
-							<div class="file-uploads col-12 mb-5">
-								<div class="input-file ownership-docs">
-									
-									<label for="ownership-docs">
-										<div class="selected-file d-none">
-											<i class="flaticon-add"></i>
-											<p>File selected</p>
 
-										</div>
-										<img src="images/attachments/ownership-docs.png">
-										<p>Ownership Documents</p>
-									</label>
-									<input type="file" id="ownership-docs" class="d-none">
-								</div>
-								<div class="input-file site-plan">
-									<label for="site-plan">
-										<div class="selected-file d-none">
-											<i class="flaticon-add"></i>
-											<p>File selected</p>
-
-										</div>
-										<img src="images/attachments/blueprint.png">
-										<p>Site Plan Documents</p>
-									</label>
-									<input type="file" id="site-plan" class="d-none">
-								</div>
-								<div class="input-file survay-plan">
-									<label for="survay-plan">
-										<div class="selected-file d-none">
-											<i class="flaticon-add"></i>
-											<p>File selected</p>
-
-										</div>
-										<img src="images/attachments/survay.png">
-										<p>Survay Plan</p>
-									</label>
-									<input type="file" id="survay-plan" class="d-none">
-								</div>
-							</div>
-							
-							
 						</div>
                     </div>
                     <div class="fieldset-footer">
@@ -362,9 +455,67 @@
 							<span class="btn  btn-outline-primary btn-prev">Previous step</span>
 							<span class="btn btn-primary btn-next">Next step</span>
 						</div>
-                        <span>Step 2 of 4</span>
+                        <span>Step 2 of 5</span>
                     </div>
-                </fieldset>
+				</fieldset>
+				
+
+				<fieldset class="attachments-container d-none animated fadeIn">
+                    <div class="fieldset-content">
+						<div class="col-12">
+							<h5 class=""><strong>Project Documents</strong></h5>
+							<hr class="mt-0 pt-0">
+						</div>
+						<div class="file-uploads col-12 mb-5">
+							<div class="input-file ownership-docs">
+								
+								<label for="ownership-docs">
+									<div class="selected-file d-none">
+										<i class="flaticon-add"></i>
+										<p>File selected</p>
+
+									</div>
+									<img src="images/attachments/ownership-docs.png">
+									<p>Ownership Documents</p>
+								</label>
+								<input type="file" id="ownership-docs" class="d-none">
+							</div>
+							<div class="input-file site-plan">
+								<label for="site-plan">
+									<div class="selected-file d-none">
+										<i class="flaticon-add"></i>
+										<p>File selected</p>
+
+									</div>
+									<img src="images/attachments/blueprint.png">
+									<p>Site Plan Documents</p>
+								</label>
+								<input type="file" id="site-plan" class="d-none">
+							</div>
+							<div class="input-file survay-plan">
+								<label for="survay-plan">
+									<div class="selected-file d-none">
+										<i class="flaticon-add"></i>
+										<p>File selected</p>
+
+									</div>
+									<img src="images/attachments/survay.png">
+									<p>Survay Plan</p>
+								</label>
+								<input type="file" id="survay-plan" class="d-none">
+							</div>
+						</div>
+                    </div>
+				<div class="fieldset-footer">
+					<div class="step-btns">
+						 <span class="btn  btn-outline-primary btn-prev">Previous step</span>
+						 <span class="btn btn-primary btn-next">Next step</span>
+					 </div>
+					 <span>Step 3 of 5</span>
+				 </div>
+			 </fieldset>
+				
+
 			  <fieldset class="d-none animated fadeIn summary-container">
 				  <h3>
                     <span class="title_text">Project Summarry</span>
@@ -399,7 +550,7 @@
 							<span class="btn  btn-outline-primary btn-prev">Previous step</span>
 							<span class="btn btn-primary btn-next">Checkout step</span>
 						</div>
-                        <span>Step 3 of 4</span>
+                        <span>Step 4 of 5</span>
                     </div>
                 </fieldset>
 			
@@ -505,7 +656,7 @@
                        <div class="step-btns d-none">
 							<span class="btn  btn-outline-primary btn-prev">Previous step</span>
 						</div>
-                        <span>Step 4 of 4</span>
+                        <span>Step 5 of 5</span>
                     </div>
                 </fieldset>
             

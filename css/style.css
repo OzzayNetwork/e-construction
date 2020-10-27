@@ -8459,3 +8459,22 @@ h1, h2, h3, h4, h5, h6 {
 .personnel-attachment small, .personnel-attachment .small {
   font-size: 12px;
 }
+
+.professional-details{
+    
+  margin-bottom: 1rem;
+  background: #d8f00817;
+  border: 2px solid #cec006;
+  border-radius: 8px;
+}
+.professional-details h6{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #b3b30e;
+}
+
+
+.professional-details p{
+  margin-bottom: 7px;
+}
+

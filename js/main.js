@@ -279,6 +279,14 @@ jQuery(document).ready(function($) {
 	
 	$(".project-details-container .btn-next").on("click", function(){
 		$('.form-header .project-details').addClass('filled').removeClass('active').addClass('project-click');
+		$('.form-header .attachments').removeClass('filled').addClass('active');
+		$(this).parent().parent().parent().addClass('d-none');
+		$('.attachments-container').removeClass('d-none');
+		
+	});
+
+	$(".attachments-container .btn-next").on("click", function(){
+		$('.form-header .attachments').addClass('filled').removeClass('active').addClass('attachment-click');
 		$('.form-header .application-summary').removeClass('filled').addClass('active');
 		$(this).parent().parent().parent().addClass('d-none');
 		$('.summary-container').removeClass('d-none');
@@ -318,6 +326,16 @@ jQuery(document).ready(function($) {
 		showproject();
 
 	});
+
+	$(' body').on("click"," .attachment-click", function(){
+		showattachments();
+
+	});
+
+	function showattachments(){
+		$('.form-header .attachments').addClass('filled').addClass('active').addClass('checkout-click').siblings().removeClass('active');
+		$('.attachments-container').removeClass('d-none').siblings('fieldset').addClass('d-none');
+	}
 	
 	function showsummary(){
 		$('.form-header .application-summary').addClass('filled').addClass('active').addClass('checkout-click').siblings().removeClass('active');
@@ -434,8 +452,23 @@ jQuery(document).ready(function($) {
 	});
 	
 	
+	function cont_details(){
+		$('.eng-details').removeClass('d-none');
+
+	}
+
+	function arch_details(){
+		$('.arch-details').removeClass('d-none');
+
+	}
+
+	function eng_details(){
+		$('.contructor-details').removeClass('d-none');
+
+	}
 
 });
+
 
     //================================================
   //map scripts
