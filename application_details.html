@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="fonts/material-design/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" href="other-icons/font/flaticon.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
@@ -168,6 +169,19 @@
                         <div class="card-title">
                             <h5>Application Details</h5>
                         </div>
+
+                        <div class="plot-container"> 
+                            <div class="details-map row w-100 clearfix form-gen-information animated fadeInRight">
+                                <div class="col-12 my-2">
+                                    <small class="text-muted">Construction Location on Map</small>
+                                    <div class="main-map-form w-100">
+                                        <div class="application-map w-100" style="height: 300px" id="map"> </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
                         <div class="d-flex plot-container row">
                             <div class=" col-4">
                                 <small class="text-muted">Project Name</small>
@@ -247,59 +261,17 @@
                         </div> 
                         <hr>
 
-                        <div class="plot-container"> 
-                            <div class="details-map row w-100 clearfix form-gen-information animated fadeInRight">
-                                <div class="col-12 my-2">
-                                    <small class="text-muted">Construction Location on Map</small>
-                                    <div class="main-map-form w-100">
-                                        <div class="application-map w-100" style="height: 300px" id="map"> </div>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-
                         <div class="card-title">
                             <h5>Project Documents</h5>
                         </div>
                         
                         <div class="row mx-2 d-flex justify-content-between" style="margin-bottom: 4.5rem;">
-                            <a class="input-file ownership-docs" target="_blank" href="title.pdf" class="blue-print">
-                                <label for="project_plan">
-                                    <div class="selected-file d-none">
-                                        <i class="flaticon-add"></i>
-                                        <p>File selected</p>
-    
-                                    </div>
-                                    <img src="images/attachments/survay.png">
-                                    <p>Project Plan</p>
-                                </label>
-                            </a>
+                            <ul>
+                                <li class="rejected_doc"><i class="zmdi zmdi-close mr-2 rejected_doc_text"></i><a target="_blank" href="title.pdf">Project Plan</a></li>
+                                <li class="pending_doc"><i class="zmdi zmdi-circle mr-2 pending_doc_text"></i><a target="_blank" href="amalgation.pdf">Ownership Documents</a></li>
+                                <li class="accepted_doc"><i class="zmdi zmdi-check-all mr-2 accepted_doc_text"></i><a target="_blank" href="subdivision.pdf">Survey Plan</a></li>
+                              </ul>  
 
-                            <a class="input-file ownership-docs" target="_blank" href="amalgation.pdf" class="blue-print">
-                                <label for="project_plan">
-                                    <div class="selected-file d-none">
-                                        <i class="flaticon-add"></i>
-                                        <p>File selected</p>
-    
-                                    </div>
-                                    <img src="images/attachments/ownership-docs.png">
-                                    <p>Ownership Documents</p>
-                                </label>
-                            </a>
-
-                            <a class="input-file ownership-docs" target="_blank" href="subdivision.pdf" class="blue-print">
-                                <label for="project_plan">
-                                    <div class="selected-file d-none">
-                                        <i class="flaticon-add"></i>
-                                        <p>File selected</p>
-    
-                                    </div>
-                                    <img src="images/attachments/blueprint.png">
-                                    <p>Survey Plan</p>
-                                </label>
-                            </a>
-                                
                             </div>      
                         </div>
                         

@@ -8517,3 +8517,32 @@ h1, h2, h3, h4, h5, h6 {
 .blue-print [class^="flaticon-"]:before{
 	font-size: 45px !important;
 }
+
+.accepted_doc{
+  list-style-type: none;
+}
+.accepted_doc_text{
+  color: green;
+}
+.accepted_doc a, i{
+  color: green;
+}
+.pending_doc{
+  list-style-type: none;
+}
+.pending_doc a, i{
+  color: blue;
+}
+.pending_doc_text{
+  color: blue;
+
+}
+.rejected_doc a, i{
+  color: red;
+}
+.rejected_doc_text{
+  color: red;
+}
+.rejected_doc{
+  list-style-type: none;
+}
