@@ -464,7 +464,7 @@ function arch_details(){
 
 	if (architecture_input.value.length == 0)
 	{ 
-		$('#arch-modal').modal('show'); 
+add --		$('#arch-modal').modal('show'); 
 
 		return false; 
 	}  else{
