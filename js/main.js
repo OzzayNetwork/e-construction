@@ -453,6 +453,50 @@ jQuery(document).ready(function($) {
 	
 });
 
+$('body').on('click','.permit-form .form-header div.clickMe', function(){
+	var theIndex=$(this).index();
+	alert(theIndex);
+	$('.permit-form fieldset').eq(theIndex).removeClass('d-none').siblings('fieldset').addClass('d-none');
+	$(this).addClass('active').siblings().removeClass('active')
+
+});
+$('.permit-form fieldset .btn-next').on('click', function(){
+	
+
+	var theParent=$(this).parent().parent().parent();
+	var theParentIndex=theParent.index();	
+	var numOfChildren=$('.permit-form').children('fieldset').last().index();
+
+	var theNavigation=$('.permit-form .form-header div').eq(theParentIndex);
+	
+	if(theParentIndex!==numOfChildren){
+		$(this).parent().parent().parent().addClass('d-none');
+		theParent.next().removeClass('d-none');	
+		theNavigation.addClass('active').addClass('clickMe').siblings().removeClass('active');	
+		theNavigation.prev().addClass('filled')
+	}
+
+
+});
+
+$('.permit-form fieldset .btn-prev').on('click', function(){
+	
+
+	var theParent=$(this).parent().parent().parent();
+	var theParentIndex=theParent.index();	
+	var numOfChildren=$('.permit-form').children('fieldset').last().index();
+	var theNavigation=$('.permit-form .form-header div').eq(theParentIndex-2);
+	
+	if(theParentIndex!==1){
+		$(this).parent().parent().parent().addClass('d-none');
+		theParent.prev().removeClass('d-none');
+		theNavigation.addClass('active').siblings().removeClass('active');
+		
+	}
+
+
+});
+
 function eng_details(){
 	$('.eng-details').removeClass('d-none');
 
