@@ -451,23 +451,36 @@ jQuery(document).ready(function($) {
 	
 	});
 	
-	
-	function cont_details(){
-		$('.eng-details').removeClass('d-none');
-
-	}
-
-	function arch_details(){
-		$('.arch-details').removeClass('d-none');
-
-	}
-
-	function eng_details(){
-		$('.contructor-details').removeClass('d-none');
-
-	}
-
 });
+
+function eng_details(){
+	$('.eng-details').removeClass('d-none');
+
+}
+
+function arch_details(){
+	// If the length of the element's string is 0 then open modal
+	var architecture_input = document.getElementById("architecture");
+
+	if (architecture_input.value.length == 0)
+	{ 
+		$('#arch-modal').modal('show'); 
+
+		return false; 
+	}  else{
+
+	$('.arch-details').removeClass('d-none');
+
+	}	
+	return true; 
+
+
+}
+
+function cont_details(){
+	$('.contructor-details').removeClass('d-none');
+
+}
 
 
     //================================================

@@ -8461,7 +8461,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .professional-details{
-    
   margin-bottom: 1rem;
   background: #d8f00817;
   border: 2px solid #cec006;
@@ -8478,3 +8477,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 7px;
 }
 
+.modal-input-file label{
+  display: flex;
+  padding: 3rem;
+  background: green;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 142px;
+  background: rgba(116,217,65,1);
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  margin: 0px;
+  transition: ease-in-ease-out;
+}
+
+.modal-input-file img {
+  height: 67px;
+}
