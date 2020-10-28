@@ -132,19 +132,7 @@
         });
 
         
-        //an ongoing application
-        addMarker({
-            coords:{lat:-1.29948, lng:36.8151453},
-            iconImage:ongoing,
-            content:`<p class="d-none">pending|unique identifier</p>
-                <h6 class="text-uppercase d-flex align-items-center">
-                    <span class="unclump-car mr-2"></span>
-                    <span>The Towers</span>
-                </h6>
-                <p><strong>Commercial building</strong></p>
-                
-                `
-        });
+        
 
  
         //add marker function
