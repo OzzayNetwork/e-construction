@@ -102,13 +102,28 @@
 					<h6>Personal Details</h6>
 				</div>
 				<div class="row">
-					<div class="form-group col-12">
+					<div class="form-group col-lg-6 col-sm-12">
 						<label for="username" class="form-label"><small class="text-muted">Full Names</small></label>
 						<input type="text" class="form-control" name="username" id="username" placeholder="Enter the full name" />
 					</div>
-					<div class="form-group col-12">
-						<label for="joined_on" class="form-label"><small class="text-muted">Joined On</small></label>
-						<input type="text" class="form-control" name="joined_on" id="joined_on" placeholder="Enter date joined" />
+					<div class="form-group col-lg-6 col-sm-12">
+						<label for="body" class="form-label"><small class="text-muted">Body</small></label>
+						<select id="body" class="form-control" name="body">
+							<option value="">Individual</option>
+							<option value="">Organisation</option>
+						</select>					
+					</div>
+					<div class="form-group col-lg-6 col-sm-12">
+						<label for="government-body" class="form-label"><small class="text-muted">Government Body</small></label>
+						<input type="text" class="form-control" name="government-body" id="government-body" placeholder="Enter government body" />
+					</div>
+					<div class="form-group col-lg-6 col-sm-12">
+						<label for="cert_no" class="form-label"><small class="text-muted">Certificate Number</small></label>
+						<input type="text" class="form-control" name="cert_no" id="cert_no" placeholder="Enter cerificate number" />
+					</div>
+					<div class="form-group col-lg-6 col-sm-12">
+						<label for="cert_ep" class="form-label"><small class="text-muted">Certificate Exp Date</small></label>
+						<input type="text" class="form-control" name="cert_exp" id="cert_exp" placeholder="Enter cerificate expiry" />
 					</div>
 					<hr>	
 				</div>		
@@ -117,15 +132,21 @@
 					<h6>Contact details</h6>
 				</div>
 				<div class="row">
-					<div class="form-group col-12">
+					<div class="form-group col-lg-6 col-sm-12">
 						<label for="phone_number" class="form-label"><small class="text-muted">Mobile phone number</small></label>
 						<input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Enter phone number" />
 					</div>
 
-					<div class="form-group col-12">
+					<div class="form-group col-lg-6 col-sm-12">
 						<label for="address" class="form-label"><small class="text-muted">Email Address</small></label>
 						<input type="text" class="form-control" name="address" id="address" placeholder="Enter email address" />
 					</div>
+
+					<div class="form-group col-lg-6 col-sm-12">
+						<label for="address" class="form-label"><small class="text-muted">Postal Address</small></label>
+						<input type="text" class="form-control" name="address" id="address" placeholder="Enter postal address" />
+					</div>
+
 
 				</div>
 
@@ -353,17 +374,11 @@
 									 <div class="selected-point-details p-4 form-map-locations">
 										 <h6>Point Details</h6>
 
-										 <p class="mb-0"><strong>Address</strong></p>
-										 <p class="clicked-address text-danger">Not selected</p>
-
 										 <p class="mb-0"><strong>Ward</strong></p>
 										 <p class="clicked-ward text-danger">Not selected</p>
 
 										 <p class="mb-0"><strong>Street</strong></p>
 										 <p class="clicked-street text-danger">Not selected</p>
-
-										 <p class="mb-0"><strong>Sub County</strong></p>
-										 <p class="clicked-subcounty text-danger">Not selected</p>
 
 										 <input type="text" name="address" class="form-latitude d-none">
 										 <input type="text" name="address" class="form-longitude d-none">
@@ -381,25 +396,33 @@
 							<h5 class=""><strong>Project's details</strong></h5>
 							<hr class="mt-0 pt-0">
 						</div>
-						<div class="form-group col-lg-4 col-sm-12">
+						<div class="form-group col-lg-4 col-sm-12 pr-1">
 							 <label for="project-name" class="form-label">Project name</label>
 							<input type="text" class="form-control" name="project-name" id="project-name" placeholder="Enter project name" />
 							</div>
-							<div class="form-group col-md-4 col-sm-12 col-lg-4 col-sm-12 d-">
-								<label for="building-type" class="form-label">Building type<strong class="text-danger">*</strong></label>
-								<select id="building-type" class="form-control" name="building type">
-									<option value="">-- select buildng type --</option>
-									<option value="">Commercial</option>
-									<option value="">Residential</option>
-								</select>
-							</div>
 
-						<div class="form-group col-lg-4 col-sm-12">
-							 <label for="plinth-size" class="form-label">Project Plinth Size</label>
-							<input type="text" class="form-control" name="project-plinth-size" id="project-plinth-size" placeholder="Enter project plinth size" />
+						<div class="form-group col-lg-4 col-sm-12 px-1">
+							<div class="row">
+								<div class="col-9 pr-0">
+									<label for="plinth-size" class="form-label">Project Plinth Size</label>
+									<input type="text" class="form-control" name="project-plinth-size" id="project-plinth-size" placeholder="Enter project plinth size" />
+								</div>
+								<div class="col-3 pl-1">
+										<label for="plinth-unit" class="form-label">Unit</label>
+										<select id="expiry_date" class="form-control" name="expiry_date">
+											<option value="">KM</option>
+											<option value="01">KM</option>
+											<option value="02">M</option>
+											<option value="03">Ha</option>
+											<option value="04">a</option>
+											<option value="05">CM</option>
+											<option value="06">Miles</option>
+										</select>
+									</div>
+							</div>
 						</div>
 
-						<div class="form-group col-md-4 col-sm-12 col-lg-4 col-sm-12">
+						<div class="form-group col-md-4 col-sm-12 col-lg-4 col-sm-12 pl-1">
 							<label for="projects-value" class="form-label">Project's Value <strong class="text-danger">*</strong></label>
 							<input type="text" class="form-control" name="username" id="projects-value" placeholder="Enter the project's value" />
 							<small class="text-info">Note that the application charge is 1.5% of project's value, ensure you input the correct value to avoid application rejection</small>
@@ -424,7 +447,7 @@
 							<div class="col-12">
 								<div class="row">					
 									<div class="col-12">
-										<h5 class=""><strong>Owner's details</strong></h5>
+										<h5 class=""><strong>Project Owner's details</strong></h5>
 										<hr class="mt-0 pt-0">
 									</div>
 									<div class="form-group col-lg-5 col-sm-12">
@@ -468,15 +491,29 @@
    
 											<small class="text-muted">Full Names</small>
 											<p>Kelvin Njuguna Ndungu</p>                            
-											<small class="text-muted">Profession</small>
+											<small class="text-muted">Profession Body</small>
 											<p>Company</p>
 											<small class="text-muted">Joined on</small>
 											<p>22 Feb 2020</p>
+
+											<div class="row">
+												<div class="col-6">
+													<small class="text-muted">Cert Number</small>
+													<p>E-23654</p>	
+												</div>
+												<div class="col-6">
+													<p class="text-right mb-0"><small class="text-muted">Exp Date</small></p>
+													<p class="text-right">24/04/2021</p>	
+												</div>
+											</div>
+											<small class="text-muted">Government Body</small>
+											<p>Govt Bod</p>
 		
 		
 											<div class="contact-header mt-2">
 												<h4>Contact details</h4>
 											</div>
+
 		
 											<small class="text-muted">Mobile phone number</small>
 											<p><a href="tel:0704549859">0704549859</a></p>
@@ -505,10 +542,24 @@
 	
 											<small class="text-muted">Full Names</small>
 											<p>Kelvin Njuguna Ndungu</p>                            
-											<small class="text-muted">Profession</small>
+											<small class="text-muted">Profession Body</small>
 											<p>Company</p>
 											<small class="text-muted">Joined on</small>
 											<p>22 Feb 2020</p>
+
+											<div class="row">
+												<div class="col-6">
+													<small class="text-muted">Cert Number</small>
+													<p>E-23654</p>	
+												</div>
+												<div class="col-6">
+													<p class="text-right mb-0"><small class="text-muted">Exp Date</small></p>
+													<p class="text-right">24/04/2021</p>	
+												</div>
+											</div>
+											<small class="text-muted">Government Body</small>
+											<p>Govt Bod</p>
+		
 		
 		
 											<div class="contact-header mt-2">
@@ -540,10 +591,24 @@
 	
 											<small class="text-muted">Full Names</small>
 											<p>Kelvin Njuguna Ndungu</p>                            
-											<small class="text-muted">Profession</small>
+											<small class="text-muted">Profession Body</small>
 											<p>Individual</p>
 											<small class="text-muted">Joined on</small>
 											<p>22 Feb 2020</p>
+
+											<div class="row">
+												<div class="col-6">
+													<small class="text-muted">Cert Number</small>
+													<p>E-23654</p>	
+												</div>
+												<div class="col-6">
+													<p class="text-right mb-0"><small class="text-muted">Exp Date</small></p>
+													<p class="text-right">24/04/2021</p>	
+												</div>
+											</div>
+											<small class="text-muted">Government Body</small>
+											<p>Govt Bod</p>
+		
 		
 		
 											<div class="contact-header mt-2">
@@ -551,9 +616,9 @@
 											</div>
 		
 											<small class="text-muted">Mobile phone number</small>
-											<p><a href="tel:0704549859">0704549859</a></p>
+											<p><a href="tel:0704549859" class="text-black">0704549859</a></p>
 											<small class="text-muted">Email address</small>
-											<p><a href="mailto:<nowiki> agentavery@sample.com">email@email.com</a></p>
+											<p><a href="mailto:<nowiki> agentavery@sample.com" class="text-black">email@email.com</a></p>
 											
 										</div>
 									</div>

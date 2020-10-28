@@ -8463,13 +8463,17 @@ h1, h2, h3, h4, h5, h6 {
 .professional-details{
   margin-bottom: 1rem;
   background: #d8f00817;
-  border: 2px solid #cec006;
+  border: 2px solid #eec60a;
   border-radius: 8px;
 }
 .professional-details h6{
   font-size: 1.3rem;
   font-weight: bold;
-  color: #b3b30e;
+  color: black;
+}
+
+.professional-details small{
+  color: #42a045 !important;
 }
 
 
