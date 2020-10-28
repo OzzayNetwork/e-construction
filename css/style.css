@@ -8082,8 +8082,8 @@ h1, h2, h3, h4, h5, h6 {
 .site-half {
   position: relative; }
   .site-half .img-bg-1 {
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
     position: absolute;
     width: 50%;
@@ -8500,4 +8500,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-input-file img {
   height: 67px;
+}
+.bg-light-gray{
+  background-color: #f7f7f7;
 }
