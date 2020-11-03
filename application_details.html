@@ -86,6 +86,7 @@
                     <ul class="dropdown arrow-top">
                       <li><a href="approved-applications.html">Approved</a></li>
                       <li><a href="pending-applications.html">Pending Applications</a></li>
+                      <li><a href="cancelled-applications.html">Cancelled Applications</a></li>
                       <li><a href="rejected-applications.html">Rejected applications</a></li>
                     </ul>
                   </li>
@@ -105,6 +106,38 @@
       <div class="row align-items-center">
         <div class="col-md-10"> <span class="sub-text">My Approved</span>
           <h1 class="text-capitalize">Application Details</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div>
+
+    <div class="modal fade" id="cancel-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="owner">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="decline-school-title">Cancel Application</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="col-lg-12 p-0 col-md-12">
+                    <div class=""> 
+                        <label class="font-weight-bold">Whats the reson for cancelling this application?</label>
+                        <textarea placeholder="Enter the reason for cancelling this application"  class="form-control"></textarea>
+                    </div>
+                </div>					
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">Cancel Application</button>
+          </div>
         </div>
       </div>
     </div>
@@ -279,7 +312,7 @@
 
                         <div style="bottom: 20px; position: absolute; right: 20px;">
                             <div class="mt-4">
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#decline-application">Cancel Application</button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#cancel-application">Cancel Application</button>
                             </div>
                         </div>
                         

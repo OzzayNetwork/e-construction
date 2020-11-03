@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="fonts/material-design/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
@@ -28,6 +29,73 @@
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="edit-personal-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="owner">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="decline-school-title">Edit Personal Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="col-lg-12 p-0 col-md-12">
+                  <div class="edit-personal-details"> 
+                      <label id="modal-label" for="name" class="font-weight-bold">Full Names</label>
+                      <input id="name" placeholder="Enter your name" value="Kelvin Njuguna Ndung'u"  class="form-control mb-2">
+
+                      <label id="modal-label" for="profession" class="font-weight-bold">Profession</label>
+                      <input id="profession" placeholder="Enter your new profession" value="Architect"  class="form-control">
+                      
+                  </div>
+              </div>					
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Save Change</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="edit-contact-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="owner">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="decline-school-title">Edit Personal Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="col-lg-12 p-0 col-md-12">
+                  <div class="edit-personal-details"> 
+                      <label id="modal-label" for="phone" class="font-weight-bold">Mobile Number</label>
+                      <input id="phone" placeholder="Enter your mobile number" value="0704549859"  class="form-control mb-2">
+
+                      <label id="modal-label" for="email" class="font-weight-bold">Email Address</label>
+                      <input id="email" placeholder="Enter your email" value="email@email.com"  class="form-control">
+                      
+                  </div>
+              </div>					
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Save Change</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
   <div class="site-navbar-wrap">
     <div class="site-navbar-top">
       <div class="container py-3">
@@ -98,7 +166,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-10"> <span class="sub-text">get to Access our services</span>
-          <h1>Create An account</h1>
+          <h1>Change Account Details</h1>
         </div>
       </div>
     </div>
@@ -107,127 +175,147 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12 construction-form">
-          <h2 class="site-heading text-black mb-5">Fill the <strong>Form</strong></h2>
+          <h2 class="site-heading text-black mb-5">Change <strong>Details</strong></h2>
           <form action="#" class="p-5 bg-white">
 			  <div class="row">
 			  	<div class="col-12">
-			  	<p>Correctly fill in the form below fields with this mark <strong class="text-danger">*</strong> are required.</p>
-				<p>Already have an account? <a href="login/login.html"><strong>Login</strong></a></p>
+			  	<p>Click on &nbsp;<strong class="zmdi zmdi-edit text-success"></strong>&nbsp; to edit details.</p>
 			  </div>
 			  </div>
             
             <div class="row form-group">
-				<div class="col-12">
-					<h5 class=""><strong>Personal details</strong></h5>
-					<hr class="mt-0 pt-0">
-				</div>
-              <div class="col-lg-4 col-md-12">
-                <label class="font-weight-bold" for="fname">First Name <strong class="text-danger">*</strong></label>
-                <input type="text" id="fname" class="form-control" placeholder="Enter your first name">
-              </div>
-				
-			 <div class="col-lg-4 col-md-12">
-				<label class="font-weight-bold" for="s-name">Second Name<strong class="text-danger">*</strong></label>
-				<input type="text" id="s-name" class="form-control" placeholder="Enter your first name">
-			  </div>
-				
-				<div class="col-lg-4 col-md-12 col-sm-12">
-				<label class="font-weight-bold" for="oname">Other Names<strong class="text-danger"></strong></label>
-				<input type="text" id="oname" class="form-control" placeholder="Enter your other names">
-        </div>
+              <div class="col-lg-4 col-sm-12 mt-2">
+                <div class="account-info h-100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="row">
+                              <div class="col-10">
+                                  <h5>Personal Details</h5>
+                              </div>
+                              <div class="col-2 d-flex justify-content-center">
+                                <i data-toggle="modal" data-target="#edit-personal-details" class="zmdi zmdi-edit" style="margin: 20px; cursor: pointer; color: green;"></i>
+                              </div>  
+                            </div>
+    
+                            <small class="text-muted">Full Names</small>
+                            <p>Kelvin Njuguna Ndungu</p>                            
+                            <small class="text-muted">Profession</small>
+                            <p>Architect</p> 
+                            <small class="text-muted">Joined on</small>
+                            <p>22 Feb 2020</p>
+                            
+                            
+                            <div class="card-title row">
+                              <div class="col-10">
+                                <h5>Contact details</h5>
+                             </div>
+                             <div class="col-2 d-flex justify-content-center">
+                              <i data-toggle="modal" data-target="#edit-contact-details" class="zmdi zmdi-edit" style="margin: 20px; cursor: pointer; color: green;"></i>
+                            </div>  
+                          </div>
+                            <small class="text-muted">Mobile phone number</small>
+                            <p><a href="tel:0704549859">0704549859</a></p>
+                             <small class="text-muted">Email address</small>
+                            <p><a href="mailto:<nowiki> agentavery@sample.com">email@email.com</a></p> 
 
-        <div class="col-12">
-					<div class="row">
-						<div class="col-lg-4 col-sm-12 ">
-							<label class="font-weight-bold" for="profession">Profession<strong class="text-danger"></strong></label>
-							<select style="width:100%;" class="form-control" id="profession" required="">
-									<option value="0">-- Select Profession --</option>
-									<option value="1">Architect</option>
-									<option value="2">Structural Engineer</option>
-									<option value="3">Planner</option>					
-							</select>
-						</div>
-					</div>
-			  </div>
-        
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <label class="font-weight-bold" for="oname">Certificate Number<strong class="text-danger"></strong></label>
-          <input type="text" id="oname" class="form-control" placeholder="Enter your other names">
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <label class="font-weight-bold" for="oname">Governing Body<strong class="text-danger"></strong></label>
-            <input type="text" id="oname" class="form-control" placeholder="Enter your other names">
-            </div>
-
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <label class="font-weight-bold" for="oname">Expiry Date<strong class="text-danger"></strong></label>
-              <input type="text" id="oname" class="form-control" placeholder="Enter your other names">
-              </div>
-
-              <div class="col-12">
-                <div class="row">
-                 
-
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                  <input type="file" class="d-none contractor-Attachment personnel-attachment" id="contractor-attachment">
-                  <label for="contractor-attachment" class="personnel-attachment border-danger">
-                      <span class="mdi mdi-file-document-multiple-outline"></span>
-                      <h6>Attach Certificate Document</h6>
-                      <p class="small text-danger font-weight-bold">* Not selected *</p>
-                    
-                  </label>
+                              <a href="/login/forgotten_password.html" class="text-info">Need to change your password</a>
+                            
+                        </div>
+                    </div>
                 </div>
-              </div>
-              </div>
-				
-			
-				
-				<div class="col-12">
-					<h5 class=""><strong>Contact details</strong></h5>
-					<hr class="mt-0 pt-0">
-				</div>
-				
-				<div class="col-md-6 col-sm-12">
-				<label class="font-weight-bold" for="phone">Phone Number <strong class="text-danger">*</strong></label>
-				<input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
-			  </div>
-				
-				<div class="col-md-6 col-sm-12">
-				<label class="font-weight-bold" for="email">Your Email address <strong class="text-danger">*</strong></label>
-				<input type="text" id="email" class="form-control" placeholder="Enter your email address">
-        </div>
+            </div>
+    
+            <div class="col-lg-8 col-sm-12 mt-2">
+                <div class="account-info h-100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>Application History</h5>
+                            </div>
 
-        <div class="col-md-6 col-sm-12">
-          <label class="font-weight-bold" for="phone">Postal Address<strong class="text-danger">*</strong></label>
-          <input type="text" id="" class="form-control" placeholder="Enter Address">
-        </div>
+                            <p><small>Below is a list of your certification history</small></p>
+                            <div class="table-responsive">
+                              <table class="table table-hover table-custom spacing8" id="data-table">
+                                <thead>
+                                  <tr> 
+            
+                                    <th>Cert No.</th>
+                                    <th>Cert type</th>
+                                    <th>Cert status</th>
+                                    <th>Application date</th>
+                                    <th>Issue date</th>
+                                    <th>Application Amount</th>
+                                  
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    
+                                    <td>
+                                      <p class="mb-0"><strong>Cer-123569</strong></p>
+                                    </td>
+                                    <td class="plot_num">
+                                      <a title="">Architect Cert</a>
+                                    </td>
+                                    <td><span class="badge badge-soft-danger text-uppercase">expired</span></td>
+                                    <td>
+                                      22 May 2017
+                                    </td>
+                                    <td>
+                                      <span>30 May 2018</span>
+                                    </td>
+                                    <td>KES 1,326</td>
+                                  </tr>
 
-        <div class="col-md-6 col-sm-12">
-          <label class="font-weight-bold" for="phone">Postal Town<strong class="text-danger">*</strong></label>
-          <input type="text" id="" class="form-control" placeholder="Enter Postal Town">
-        </div>
-				
-				<div class="col-12">
-					<h5 class=""><strong>Account Password</strong></h5>
-					<hr class="mt-0 pt-0">
-				</div>
-				
-				<div class="col-md-6 col-sm-12">
-				<label class="font-weight-bold" for="pass">Password<strong class="text-danger">*</strong></label>
-				<input type="password" id="pass" class="form-control" placeholder="Enter your prefered password">
-			  </div>
-				
-				<div class="col-md-6 col-sm-12">
-				<label class="font-weight-bold" for="confirm">Confirm Password<strong class="text-danger">*</strong></label>
-				<input type="password" id="confirm" class="form-control" placeholder="Confrm password">
-			  </div>
+                                  <tr>
+                                    
+                                    <td>
+                                      <p class="mb-0"><strong>Cer-123569</strong></p>
+                                    </td>
+                                    <td class="plot_num">
+                                      <a title="">Architect Cert</a>
+                                    </td>
+                                    <td><span class="badge badge-soft-danger text-uppercase">expired</span></td>
+                                    <td>
+                                      22 May 2018
+                                    </td>
+                                    <td>
+                                      <span>30 May 2019</span>
+                                    </td>
+                                    <td>KES 1,326</td>
+            
+                                  </tr>
+
+                                  <tr>                                
+                                    <td>
+                                      <p class="mb-0"><strong>Cer-123569</strong></p>
+                                    </td>
+                                    <td class="plot_num">
+                                      <a title="">Architect Cert</a>
+                                    </td>
+                                    <td><span class="badge badge-soft-success text-uppercase">active</span></td>
+                                    <td>
+                                      22 May 2019
+                                    </td>
+                                    <td>
+                                      <span>30 May 2020</span>
+                                    </td>
+                                    <td>KES 1,326</td>
+
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             
-            <div class="row form-group">
-              <div class="col-md-12">
-                <button class="btn btn-primary">Submit application</button>
-              </div>
+            <div class="row mt-5 pl-4 form-group ">
+              <button class="btn btn-primary ml-2">Submit changes</button>
+
             </div>
           </form>
         </div>

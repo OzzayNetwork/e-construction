@@ -466,7 +466,13 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1140px;
+     }
+    .header__logo {
+      min-width: calc(270px - 2rem)
+    }
+    
+    }
 
 .container-fluid {
   width: 100%;
@@ -8524,20 +8530,20 @@ h1, h2, h3, h4, h5, h6 {
 .accepted_doc_text{
   color: green;
 }
-.accepted_doc a, i{
+.accepted_doc >a, .accepted_doc > i{
   color: green;
 }
 .pending_doc{
   list-style-type: none;
 }
-.pending_doc a, i{
+.pending_doc > a, .pending_doc > i{
   color: blue;
 }
 .pending_doc_text{
   color: blue;
 
 }
-.rejected_doc a, i{
+.rejected_doc > a,.rejected_doc > i{
   color: red;
 }
 .rejected_doc_text{
@@ -8545,4 +8551,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 .rejected_doc{
   list-style-type: none;
+}
+
+.header__logo>h1>a{
+  color: #FFF
+}
+
+.header__logo>h1>p {
+  font-size: 12px;
+}
+
+.header__logo>h1 {
+  line-height: 100%;
+  font-size: 1.2rem;
+  font-weight:bold;
+  margin: 0
+}
+
+.header__logo .the-logo{
+	height: 50px !important;
+}
+
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+  border-right: 1px solid #9696967d;
+  padding-right: 2rem;
+  color: white;
+}
+
+.header__logo img{
+  margin-right: 1rem;
 }
